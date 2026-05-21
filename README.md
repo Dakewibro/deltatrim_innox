@@ -14,29 +14,28 @@ In the current prototype, the product includes:
 - A `Debrief` view for leech profile analysis and video review
 - A `Trim+` workspace for graph comparison, media review, and AI-assisted prompting
 
-The static web demo is suitable for deployment on Netlify.
 The repository also keeps the backend and hardware code that supported the broader telemetry and ingestion prototype.
 
-## Why This Repo Matters
+## Live Demo
 
-This repository is intentionally broader than the static demo site.
+You can access the interface here: https://deltatrim.netlify.app/
 
-It shows evidence of work across:
+## Repo contents
 
-- Frontend product design for coaches and performance reviewers
+This repository is intentionally broader than the demo site.
+
+It includes:
+
+- Interface for sailing coaches and performance reviewers
 - API design for telemetry ingestion and monitoring endpoints
 - ESP32-based hardware experiments for simulated IoT sensor data
 - Cloud and data-pipeline exploration for moving telemetry into usable interfaces
-- Early analysis workflows for performance-pattern exploration
+- Low-latency data analysis workflows for performance-pattern exploration
 
-That means the deployed site and the repository serve different purposes:
-
-- The deployed site is a product demo
-- The repository is the full product-and-prototype story
 
 ## Recognition
 
-This project was awarded **HKD 100,000** in support from **HKSTP** following the **InnoX HK Entrepreneurship Program, Winter 2026 batch**.
+This team behind this project was awarded **HKD 100,000** in support from **HKSTP** following the **InnoX HK Entrepreneurship Program, Winter 2026 batch**.
 
 See [docs/product/RECOGNITION.md](/Users/Deaptheror/Downloads/DeltaTrim%20figma%20UI/docs/product/RECOGNITION.md) for the repo note.
 
@@ -104,16 +103,6 @@ This part of the repo supports claims around:
 - ingestion-oriented data formatting
 - monitoring and review tooling
 - experimentation around performance-pattern analysis
-
-## Static Demo vs Full Prototype
-
-For clarity:
-
-- `Netlify deployment`: static frontend demo
-- `Local prototype`: frontend + Express API
-- `Broader system evidence`: frontend + API + firmware + docs in this repo
-
-The app can be presented publicly as a static product demo, while the repository still documents the fuller telemetry prototype behind it.
 
 ## Running Locally
 
