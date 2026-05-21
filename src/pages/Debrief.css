@@ -1,0 +1,112 @@
+.debrief {
+  width: 100%;
+  height: 100%;
+}
+
+.debrief-date {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.debrief-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+  min-height: 400px;
+}
+
+.graph-wrapper,
+.video-wrapper {
+  height: 100%;
+  min-height: 400px;
+}
+
+.debrief-timeline {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #141920;
+  border-radius: 12px;
+  border: 1px solid #1a1f2e;
+}
+
+.timeline-thumbnails {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.timeline-thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.timeline-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #0f1419;
+  border: 2px solid #1a1f2e;
+}
+
+.thumbnail-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0e1a 0%, #141920 100%);
+}
+
+.thumbnail-sailboat {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.sail-thumb {
+  width: 25px;
+  height: 35px;
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hull-thumb {
+  width: 40px;
+  height: 8px;
+  background: linear-gradient(90deg, #2a2f3e 0%, #1a1f2e 100%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 4px 4px;
+}
+
+.thumbnail-time {
+  font-size: 12px;
+  color: #8892b0;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .debrief-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,191 @@
+.leech-graph-container {
+  background-color: #141920;
+  border: 1px solid #1a1f2e;
+  border-radius: 12px;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.leech-graph-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.boat-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background-color: #0f1419;
+  border: 1px solid #1a1f2e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.boat-legend:hover {
+  border-color: #00d4aa;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.legend-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown-arrow {
+  color: #8892b0;
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.graph-add-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #0f1419;
+  border: 1px solid #1a1f2e;
+  color: #00d4aa;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-add-button:hover {
+  background-color: #00d4aa;
+  color: #0a0e1a;
+  border-color: #00d4aa;
+}
+
+.leech-graph-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.leech-canvas {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Node Cards Section */
+.node-cards-section {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.boat-nodes-wrapper {
+  background-color: #0f1419;
+  border: 1px solid #1a1f2e;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.boat-nodes-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1a1f2e;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.boat-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.node-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+@media (max-width: 800px) {
+  .node-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .node-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.node-card {
+  background-color: #141920;
+  border: 1px solid #1a1f2e;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.node-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.node-title {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.node-status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fb7185; /* red/bad by default */
+}
+
+.node-status.ok {
+  background-color: #34d399; /* green/good */
+}
+
+.node-data {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.node-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.node-label {
+  color: #8892b0;
+  font-size: 11px;
+}
+
+.node-value {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+}

@@ -1,0 +1,224 @@
+.video-player-container {
+  background-color: #141920;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1a1f2e;
+}
+
+.video-wrapper-inner {
+  flex: 1;
+  position: relative;
+  background-color: #0a0e1a;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  min-height: 300px;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0e1a 0%, #141920 100%);
+}
+
+.placeholder-content {
+  text-align: center;
+}
+
+.placeholder-sailboat {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 24px;
+  position: relative;
+}
+
+.sail {
+  width: 60px;
+  height: 80px;
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.hull {
+  width: 100px;
+  height: 20px;
+  background: linear-gradient(90deg, #2a2f3e 0%, #1a1f2e 100%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 8px 8px;
+}
+
+.placeholder-text {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.placeholder-subtext {
+  font-size: 14px;
+  color: #8892b0;
+}
+
+.video-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: #0f1419;
+  border-radius: 8px;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.control-button:hover {
+  background-color: #1a1f2e;
+}
+
+.time-display {
+  font-size: 12px;
+  color: #8892b0;
+  min-width: 40px;
+  text-align: center;
+}
+
+.progress-bar-container {
+  flex: 1;
+  height: 6px;
+  background-color: #1a1f2e;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #00d4aa;
+  border-radius: 3px;
+  position: relative;
+}
+
+.progress-handle {
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #00d4aa;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.play-button-overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.play-button-overlay:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.video-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #1a1f2e;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #0f1419;
+  border: 1px solid #1a1f2e;
+  border-radius: 8px;
+  color: #8892b0; /* Default gray */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-button:hover {
+  background-color: #1a1f2e;
+  color: #ffffff;
+  border-color: #00d4aa;
+}
+
+.action-button.active {
+  background-color: #00d4aa;
+  color: #0a0e1a; /* Dark color when background is teal */
+  border-color: #00d4aa;
+}
+
+.action-svg-icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+}
+
+.action-button.active .action-svg-icon {
+  color: #0a0e1a;
+}
+
+.control-svg-icon {
+  color: #8892b0;
+  transition: all 0.2s ease;
+}
+
+.control-button:hover .control-svg-icon {
+  color: #ffffff;
+}

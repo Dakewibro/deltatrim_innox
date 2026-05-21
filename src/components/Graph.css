@@ -1,0 +1,97 @@
+.graph-container {
+  background-color: #141920;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1a1f2e;
+}
+
+.graph-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.boat-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legend-text {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  color: #8892b0;
+  margin-left: 4px;
+}
+
+.graph-add-button {
+  position: absolute;
+  right: 0;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.graph-add-button:hover {
+  background-color: #1a1f2e;
+}
+
+.graph-content {
+  flex: 1;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.graph-svg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.graph-tooltip {
+  background-color: #1a1f2e;
+  border: 1px solid #2a2f3e;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.custom-tooltip {
+  background-color: #1a1f2e;
+  border: 1px solid #2a2f3e;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.custom-tooltip p {
+  margin: 4px 0;
+  font-size: 12px;
+}

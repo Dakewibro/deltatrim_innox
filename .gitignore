@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.env.local
+.DS_Store
+uploads
+.vercel
+.vscode
+ESP32C3_FINAL/.pio
+ESP32C3_FINAL/.vscode
+*.log
