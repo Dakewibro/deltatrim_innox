@@ -1,5 +1,7 @@
 # DELTATRIM
 
+This team behind this project was awarded **HKD 100,000** in support from **HKSTP** following the **InnoX HK Entrepreneurship Program, Winter 2026 batch**.
+
 DELTATRIM is a sailing performance analysis platform that turns sail-shape and motion data into a coach-friendly review experience.
 
 The project combines a polished web interface, a lightweight local API layer, and ESP32-based telemetry experiments to show how onboard sensor data can move from hardware to dashboards, debrief tools, and analysis workflows.
@@ -31,11 +33,6 @@ It includes:
 - ESP32-based hardware experiments for simulated IoT sensor data
 - Cloud and data-pipeline exploration for moving telemetry into usable interfaces
 - Low-latency data analysis workflows for performance-pattern exploration
-
-
-## Recognition
-
-This team behind this project was awarded **HKD 100,000** in support from **HKSTP** following the **InnoX HK Entrepreneurship Program, Winter 2026 batch**.
 
 See [docs/product/RECOGNITION.md](/Users/Deaptheror/Downloads/DeltaTrim%20figma%20UI/docs/product/RECOGNITION.md) for the repo note.
 
